@@ -12,7 +12,7 @@ require_once("php/formvalidator.php");
 $formproc = new FGContactForm();
 
 //Initialize the contact form
-$formproc->AddRecipient('eliasyoon@gmail.com');
+$formproc->AddRecipient('kim.jaon79@gmail.com');
 $formproc->SetFormRandomKey('CnRrspl1FyEylUj');
 
 $validation_errors='';
@@ -35,7 +35,7 @@ if(isset($_POST['submitted']))
         $email = $_POST['email'];
         $message = $_POST['message'];
         $from = 'From: $email';
-        $to = 'eliasyoon@gmail.com';
+        $to = 'kim.jaon79@gmail.com';
         $subject = 'New Message From Methusela Contact Form';
         $body = "From: $name\n E-Mail: $email\n Message:\n $message";
         mail($to,$subject,$body,$from);
@@ -66,7 +66,7 @@ $disp_message = isset($_POST['message'])?$_POST['message']:'';
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css"/>
     <link type="text/css" rel="stylesheet" href="style.css" />
     <title>Contact - Methusela - The Witness</title>
   </head>
@@ -80,8 +80,8 @@ $disp_message = isset($_POST['message'])?$_POST['message']:'';
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="http://www.methusela.bandcamp.com" target="_blank">Music</a></li>
-          <li><a href="https://www.youtube.com/user/deuteightthree" target="_blank">Theodox</a></li>
+          <li><a href="music.html" target="_blank">Music</a></li>
+          <li><a href="https://www.youtube.com" target="_blank">Theodox</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>
       </nav>
@@ -117,17 +117,17 @@ $disp_message = isset($_POST['message'])?$_POST['message']:'';
 
     <footer>
       <div class="socialIcons">
-        <a href="https://www.facebook.com/methuselamusic" target="_blank" class="svg">
+        <a href="https://www.facebook.com" target="_blank" class="svg">
           <object type="image/svg+xml" data="media/facebook.svg">
             <img src="media/facebook.svg" alt="facebook link icon" />
           </object>
         </a>
-        <a href="https://www.instagram.com/eliasyoon" target="_blank" class="svg">
+        <a href="https://www.instagram.com" target="_blank" class="svg">
           <object type="image/svg+xml" data="media/instagram.svg">
             <img src="media/instagram.svg" alt="instagram link icon"/>
           </object>
         </a>
-        <a href="https://www.twitter.com/methuselamusic" target="_blank" class="svg">
+        <a href="https://www.twitter.com" target="_blank" class="svg">
           <object type="image/svg+xml" data="media/twitter.svg">
             <img src="media/twitter.svg" alt="twitter link icon" />
           </object>

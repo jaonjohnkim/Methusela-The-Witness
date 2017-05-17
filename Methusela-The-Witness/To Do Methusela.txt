@@ -6,17 +6,6 @@ CHECK - social media button, fix at the bottom
 
 CHECK - center about paragraph vertically & horiz
 
--------------------------------------------------------
-
-font bigger
-
-textboxes white w/ black text
-
-Make logo slightly smaller
-
-
-
-
 CONTACT PAGE:
 
 Eliasyoon@gmail.com

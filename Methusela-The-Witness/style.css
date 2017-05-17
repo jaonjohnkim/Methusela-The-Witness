@@ -25,11 +25,11 @@ body{
   color: #333333;
   -webkit-font-smoothing: antialiased;
   font-family: OpenSans-CondLight, Open Sans, "Helvetica", "sans-serif";
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 1.5px;
+  font-weight: 300;
   font-weight: 400;
   min-height: 100%;
-  min-width: 400px;
   text-rendering: optimizeLegibility;
 }
 
@@ -45,8 +45,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   margin-top: 20px;
-  margin-bottom: 25px;
-  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 header nav {
@@ -63,16 +62,15 @@ header nav {
   }
 
   header nav ul li{
-      /*background-color: rgba( 120, 120, 120, .9);*/
-      background-color: rgba( 255, 255, 255, 0.9);
+      background-color: rgba( 120, 120, 120, .9);
       position: relative;
       z-index: 1;
     }
 
       header nav ul li a {
         display: block;
-        color: rgba(0,0,0,1);
-        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 300;
         padding: 0.5rem 0;
         text-decoration: none;
         transition: 150ms all ease;
@@ -82,7 +80,7 @@ header nav {
 
         header nav ul li:hover a{
           font-weight: 400;
-          background-color: rgba(151, 214, 235, 0.1);
+          color: rgba(0,0,0,1);
         }
 
 #navToggle {
@@ -106,8 +104,7 @@ header nav {
 
     #navToggle:hover a{
       /*text-decoration: bold;*/
-      /*color: rgba(255,255,255,1);*/
-      background-color: rgba(151, 214, 235, 0.1);
+      color: rgba(0,0,0,1);
       font-weight: 400;
     }
 
@@ -120,7 +117,7 @@ header nav {
 body{
   position: relative;
   padding: 0 0 70px;
-  min-height: 97%;
+  min-height: 100%;
 }
 
 main{
@@ -158,7 +155,7 @@ footer{
 }
 
 .logo#home > img{
-  width: 400px;
+  width: 500px;
 
 }
 
@@ -175,34 +172,24 @@ footer{
 /*******************/
 
 .about{
-  max-width: 750px;
-  margin: 0px auto 0px auto;
+  max-width: 740px;
+  margin: 50px auto 50px auto;
   padding: 0 45px 0 45px;
-  font-family: Lato, Helvetica, sans-serif;
 }
 
 .about > p{
   text-align: center;
-  /*background-color: rgba( 0, 0, 0, .4);*/
-  background-color: rgba(255,255,255,1);
-  /*color: rgba(255, 255, 255, 1);*/
-  color: rgba(0,0,0,1);
+  background-color: rgba( 0, 0, 0, .4);
+  color: rgba(255, 255, 255, 1);
   padding: 15px;
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+  font-size: 12px;
 }
 
-  .about p a{ /* SALT STAIN LINK */
-    color: inherit;
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-    .about p a:hover{
-      background-color: rgba(151, 214, 235, 0.1);
-
-    }
+.about p a{
+  color: #000000;
+  font-weight: 700;
+  background-color: #ffffff;
+}
 
 #signature{
   text-align: center;
@@ -226,12 +213,11 @@ footer{
 #contact{
   display: block;
 
-  font-family: Lato, Helvetica, sans-serif;
+  font: inherit;
   text-transform: uppercase;
 }
 
 #contact h1{
-  font-family: OpenSans-CondLight, Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -239,11 +225,9 @@ footer{
   max-width: 600px;
   margin: 30px auto 50px auto;
   padding: 10px 45px 10px 45px;
-  letter-spacing: 1px;
-  /*background-color: rgba( 0, 0, 0, .4);*/
-  background-color: rgba(255,255,255,1);
-  /*color: #ffffff;*/
-  color: rgba(0,0,0,1);
+  letter-spacing: 2px;
+  background-color: rgba( 0, 0, 0, .4);
+  color: #ffffff;
 }
 
 .form label{
@@ -253,15 +237,12 @@ footer{
 
 .form input, textarea{
   width:100%;
-  height: 35px;
+  height: 27px;
   background:#f8f8f8;
   margin-top: 10px;
-  padding: auto 8px auto;
-  padding-left: 12px;
+  padding: 18px 15px 18px 15px;
   font-size: inherit;
-  font-family: inherit;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-style: inherit;
   border: 1px solid #888888;
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
@@ -274,20 +255,15 @@ footer{
 
 .form textarea{
   height: 100px;
-  font-family: inherit;
-  padding: 8px;
-  padding-left: 12px;
-  resize: none;
+  font-style: inherit;
 }
 
 .form #submit{
   display: block;
   margin: 30px auto 10px auto;
   width: 100px;
-  padding-left: 0;
   text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
+  padding: 5px;
   cursor:pointer;
   transition: 100ms all ease;
 }
@@ -306,15 +282,14 @@ footer{
 .form .error{
   margin-top: 10px;
   color: #ff0000;
-  font-weight: 400;
+  font-weight: 600;
 
 }
 
 #thankyou #message{
   max-width: 100%;
   width: 400px;
-  /*background-color: rgba(0,0,0,0.1);*/
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.1);
   text-align: center;
   margin: 0 auto;
   padding: 20px 0 20px 0;
@@ -331,7 +306,7 @@ footer{
 }
 
 .socialIcons a{
-  margin: 25px 20px 5px 20px;
+  margin: 5px 20px 5px 20px;
 
 }
 
@@ -382,8 +357,8 @@ footer{
     }
 
       header nav ul li{
-        /*background-color: rgba( 0, 0, 0, .3);*/
-        background-color: rgba( 255, 255, 255, 1);
+        background-color: rgba( 0, 0, 0, .3);
+
       }
         header nav ul li a{
           padding: 0 1.25rem;
@@ -396,67 +371,17 @@ footer{
     top: 50%;
     transform: translateY(-55%); /*CENTERS VERTICALLY*/
   }
-
-  @media all and (max-height: 500px){
-    main#about{
-      position: relative;
-      /*width: 100%;*/
-      /*max-height: 100%;*/
-      top:0;
-      transform: translateY(0);
-    }
-  }
-
-  @media all and (max-height: 800px){
-    main#contact{
-      position: relative;
-      /*width: 100%;*/
-      /*max-height: 100%;*/
-      top:0;
-      transform: translateY(0);
-    }
-  }
 }
 
 /*MAKE BODY RELATIVE IF HEIGHT IS TOO SMALL */
 @media all and (max-height: 650px){
-  main#index{
+
+  main{
     position: relative;
     /*width: 100%;*/
     /*max-height: 100%;*/
     top:0;
     transform: translateY(0);
   }
-}
 
-@media all and (max-width: 770px){
-
-  @media all and (max-height: 650px){
-    main#about{
-      position: relative;
-      top:0;
-      transform: translateY(0);
-    }
-  }
-}
-
-
-/*@media all and (max-height: 700px){
-  @media all and (max-width: 500px){
-    main#about{
-      position: relative;
-      top:0;
-      transform: translateY(0);
-    }
-  }
-}*/
-
-@media all and (max-width: 600px){
-  @media all and (max-height: 800px){
-    main#contact{
-      position: relative;
-      top:0;
-      transform: translateY(0);
-    }
-  }
 }
